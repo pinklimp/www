@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Sky Was Pink</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #ff99cc, #ffccff);
+            background-size: 400% 400%;
+            animation: skyAnimation 15s ease infinite;
+        }
+        @keyframes skyAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        #headline {
+            font-family: 'Lora', serif;
+            font-size: 42px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+        #contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        #email {
+            font-family: 'Lora', serif;
+            font-size: 12px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="headline">boundless web3 experiments</h1>
+        <div id="contact">
+            <p id="email" onclick="location.href='mailto:limp@theskywas.pink';">limp@theskywas.pink</p>
+        </div>
+    </div>
+</body>
+</html>
